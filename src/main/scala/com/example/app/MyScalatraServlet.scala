@@ -77,7 +77,13 @@ private implicit val storageConnectionString: String =
 
 
    get("/program/:id") {    
-       /*val account = CloudStorageAccount.parse(storageConnectionString);
+       /*
+       // http://azure.microsoft.com/en-us/documentation/articles/storage-java-how-to-use-blob-storage/
+
+// http://www.scalatra.org/2.3/guides/formats/json.html
+
+//http://www.scalatra.org/2.3/guides/deployment/standalone.html
+       val account = CloudStorageAccount.parse(storageConnectionString);
        val blobClient = account.createCloudBlobClient();
 
        // Get a reference to a container.
